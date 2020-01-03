@@ -1,0 +1,428 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-02T06:18:58.137Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2161661603,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.startUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should login with valid credentials",
+        "description": "",
+        "id": "user-can-only-login-with-valid-credentials;user-should-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 68745948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23459900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginPageStepDef.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 750081465,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter credentials",
+            "match": {
+              "location": "LoginPageStepDef.enteredCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13536259,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"HomePage\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HomePage\"",
+                  "offset": 0
+                }
+              ],
+              "location": "LoginPageStepDef.shouldBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-02T06:19:01.206Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2072013783,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.startUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User shouldn\u0027t be able to login with credentials  user :\"WrongUser\", password: \"password\"",
+        "description": "",
+        "id": "user-can-only-login-with-valid-credentials;user-shouldn-t-be-able-to-login-with-credentials--user-:\"\u003cusername\u003e\"--password:-\"\u003cpassword\u003e\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 67815065,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37983784,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginPageStepDef.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 617433955,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Entered \"WrongUser\" \"password\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WrongUser\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginPageStepDef.enteredCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220296809,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Message\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 0
+                }
+              ],
+              "location": "LoginPageStepDef.shouldBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-02T06:19:04.231Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1303730133,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.startUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User shouldn\u0027t be able to login with credentials  user :\"userName\", password: \"WrongPassword\"",
+        "description": "",
+        "id": "user-can-only-login-with-valid-credentials;user-shouldn-t-be-able-to-login-with-credentials--user-:\"\u003cusername\u003e\"--password:-\"\u003cpassword\u003e\";;3",
+        "after": [
+          {
+            "result": {
+              "duration": 68407470,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23343492,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginPageStepDef.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 628017787,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Entered \"userName\" \"WrongPassword\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userName\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"WrongPassword\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginPageStepDef.enteredCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190035699,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Message\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 0
+                }
+              ],
+              "location": "LoginPageStepDef.shouldBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-02T06:19:06.448Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1592163577,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.startUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User shouldn\u0027t be able to login with credentials  user :\"\", password: \"password\"",
+        "description": "",
+        "id": "user-can-only-login-with-valid-credentials;user-shouldn-t-be-able-to-login-with-credentials--user-:\"\u003cusername\u003e\"--password:-\"\u003cpassword\u003e\";;4",
+        "after": [
+          {
+            "result": {
+              "duration": 69492940,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25085156,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginPageStepDef.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 436255952,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Entered \"\" \"password\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginPageStepDef.enteredCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140366119,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Message\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 0
+                }
+              ],
+              "location": "LoginPageStepDef.shouldBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-02T06:19:08.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1274245932,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.startUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "User shouldn\u0027t be able to login with credentials  user :\"username\", password: \"\"",
+        "description": "",
+        "id": "user-can-only-login-with-valid-credentials;user-shouldn-t-be-able-to-login-with-credentials--user-:\"\u003cusername\u003e\"--password:-\"\u003cpassword\u003e\";;5",
+        "after": [
+          {
+            "result": {
+              "duration": 69903271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25515712,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginPageStepDef.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 401228540,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Entered \"username\" \"\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginPageStepDef.enteredCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140087726,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Message\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 0
+                }
+              ],
+              "location": "LoginPageStepDef.shouldBeDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User can only login with valid credentials",
+    "description": "",
+    "id": "user-can-only-login-with-valid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,9 @@
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/runners/CucumberRunner.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/utils/ConfigurationReader.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/utils/Driver.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/pages/LoginPage.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/utils/PageObjects.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/utils/BrowserUtils.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/pages/BasePage.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/LoginPageStepDef.java
+/home/serdar/Documents/zerobank-automation/src/test/java/com/zerobank/stepdefinitions/Hook.java
